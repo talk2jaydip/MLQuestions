@@ -19,6 +19,13 @@ If our model is too simple and has very few parameters then it may have high bia
  - Locally linear embedding  
 [[src]](https://towardsdatascience.com/why-and-how-to-get-rid-of-the-curse-of-dimensionality-right-with-breast-cancer-dataset-7d528fb5f6c0)
 
+#### 4.1) How does the correlation coefficient differ from regression slope?
+> The correlation coefficient measures the "tightness" of linear relationship between two variables and is bounded between -1 and 1, inclusive. Correlations close to zero represent no linear association between the variables, whereas correlations close to -1 or +1 indicate strong linear relationship. Intuitively, the easier it is for you to draw a line of best fit through a scatterplot, the more correlated they are.
+
+> The regression slope measures the "steepness" of the linear relationship between two variables and can take any value from −∞ to +∞. Slopes near zero mean that the response (Y) variable changes slowly as the predictor (X) variable changes. Slopes that are further from zero (either in the negative or positive direction) mean the response changes more rapidly as the predictor changes. Intuitively, if you were to draw a line of best fit through a scatterplot, the steeper it is, the further your slope is from zero.
+
+So the correlation coefficient and regression slope MUST have the same sign (+ or -), but will almost never have the same value.
+
 #### 5) What is regularization, why do we use it, and give some examples of common methods? [[src](http://houseofbots.com/news-detail/2849-4-data-science-and-machine-learning-interview-questions)]
 A technique that discourages learning a more complex or flexible model, so as to avoid the risk of overfitting. 
 Examples
